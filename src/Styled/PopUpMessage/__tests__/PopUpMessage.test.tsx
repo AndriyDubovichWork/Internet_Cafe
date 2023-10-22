@@ -9,10 +9,10 @@ afterEach(() => {
 
 test('PopUpMessage contains text', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
         <Route
-          path='/PC_Club/'
+          path='/'
           element={
             <PopUpMessage
               text={'hi'}

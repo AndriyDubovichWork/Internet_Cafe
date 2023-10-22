@@ -16,9 +16,9 @@ afterEach(() => {
 test('ForgotPassword match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/forgotPassword']}>
+      <MemoryRouter initialEntries={['/forgotPassword']}>
         <Routes>
-          <Route path='/PC_Club/forgotPassword' element={<ForgotPassword />} />
+          <Route path='/forgotPassword' element={<ForgotPassword />} />
         </Routes>
       </MemoryRouter>
     )
@@ -27,9 +27,9 @@ test('ForgotPassword match snapshot', () => {
 });
 test('ForgotPassword contains fields', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/forgotPassword']}>
+    <MemoryRouter initialEntries={['/forgotPassword']}>
       <Routes>
-        <Route path='/PC_Club/forgotPassword' element={<ForgotPassword />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
       </Routes>
     </MemoryRouter>
   );
@@ -40,9 +40,9 @@ test('ForgotPassword contains fields', () => {
 
 test('Register input cnahges', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/forgotPassword']}>
+    <MemoryRouter initialEntries={['/forgotPassword']}>
       <Routes>
-        <Route path='/PC_Club/forgotPassword' element={<ForgotPassword />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
       </Routes>
     </MemoryRouter>
   );

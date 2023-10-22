@@ -18,7 +18,7 @@ const SubHeader = ({ title }: SubHeaderPropsT) => {
         <h1 className={style.Title}>{title}</h1>
 
         <Breadcrumbs aria-label='breadcrumb'>
-          <NavLink to='/PC_Club' className={style.Link}>
+          <NavLink to='/' className={style.Link}>
             Home
           </NavLink>
           <NavLink to={location.pathname} className={style.Link}>

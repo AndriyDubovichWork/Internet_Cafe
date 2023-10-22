@@ -9,9 +9,9 @@ afterEach(() => {
 
 test('Computers contains main tag', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/computers']}>
+    <MemoryRouter initialEntries={['/computers']}>
       <Routes>
-        <Route path='/PC_Club/computers' element={<Computers />} />
+        <Route path='/computers' element={<Computers />} />
       </Routes>
     </MemoryRouter>
   );

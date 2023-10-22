@@ -16,9 +16,9 @@ afterEach(() => {
 test('Login match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/login']}>
+      <MemoryRouter initialEntries={['/login']}>
         <Routes>
-          <Route path='/PC_Club/login' element={<Login />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
       </MemoryRouter>
     )
@@ -27,9 +27,9 @@ test('Login match snapshot', () => {
 });
 test('Login contains fields', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/login']}>
+    <MemoryRouter initialEntries={['/login']}>
       <Routes>
-        <Route path='/PC_Club/login' element={<Login />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </MemoryRouter>
   );
@@ -41,9 +41,9 @@ test('Login contains fields', () => {
 });
 test('Login input cnahges', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/login']}>
+    <MemoryRouter initialEntries={['/login']}>
       <Routes>
-        <Route path='/PC_Club/login' element={<Login />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </MemoryRouter>
   );

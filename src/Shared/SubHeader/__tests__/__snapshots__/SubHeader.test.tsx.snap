@@ -27,7 +27,7 @@ Array [
           <a
             aria-current="page"
             className="Link active"
-            href="/PC_Club"
+            href="/"
             onClick={[Function]}
           >
             Home
@@ -45,7 +45,7 @@ Array [
           <a
             aria-current="page"
             className="Link active"
-            href="/PC_Club/about"
+            href="/about"
             onClick={[Function]}
           >
             hello

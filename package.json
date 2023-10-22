@@ -1,6 +1,5 @@
 {
-  "homepage": "http://AndriyDubovichWork.github.io/PC_Club",
-  "name": "computer_club",
+  "name": "internet_cafe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,10 +24,9 @@
     "formik": "^2.2.9",
     "formik-mui": "^5.0.0-alpha.0",
     "formik-mui-lab": "^1.0.0",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1",
+    "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",
     "typescript": "^4.4.2",
@@ -40,8 +38,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [

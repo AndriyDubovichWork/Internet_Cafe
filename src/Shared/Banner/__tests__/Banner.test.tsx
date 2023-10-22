@@ -10,9 +10,9 @@ afterEach(() => {
 test('Banner match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/']}>
+      <MemoryRouter initialEntries={['/']}>
         <Routes>
-          <Route path='/PC_Club/' element={<Banner />} />
+          <Route path='/' element={<Banner />} />
         </Routes>
       </MemoryRouter>
     )
@@ -21,9 +21,9 @@ test('Banner match snapshot', () => {
 });
 test('Banner contains text', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
-        <Route path='/PC_Club/' element={<Banner />} />
+        <Route path='/' element={<Banner />} />
       </Routes>
     </MemoryRouter>
   );

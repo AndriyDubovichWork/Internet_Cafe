@@ -16,27 +16,27 @@ const NavBar = ({ isNavBarOpen, setIsNavBarOpen }: NavBarPropsT) => {
   const urls = [
     {
       text: 'Home',
-      link: '/PC_Club',
+      link: '/',
     },
     {
       text: 'About',
-      link: '/PC_Club/about',
+      link: '/about',
     },
     {
       text: 'Computers',
-      link: '/PC_Club/computers',
+      link: '/computers',
     },
     {
       text: 'Reviews',
-      link: '/PC_Club/reviews',
+      link: '/reviews',
     },
     {
       text: 'Our Team',
-      link: '/PC_Club/team',
+      link: '/team',
     },
     {
       text: 'Contact',
-      link: '/PC_Club/contact',
+      link: '/contact',
     },
   ];
   const { isAuthorised, setIsAuthorised } = useContext(IsAuthorisedContext);
@@ -46,11 +46,11 @@ const NavBar = ({ isNavBarOpen, setIsNavBarOpen }: NavBarPropsT) => {
         ...urls,
         {
           text: 'Log In',
-          link: '/PC_Club/login',
+          link: '/login',
         },
         {
           text: 'Register',
-          link: '/PC_Club/register',
+          link: '/register',
         },
       ];
   return (

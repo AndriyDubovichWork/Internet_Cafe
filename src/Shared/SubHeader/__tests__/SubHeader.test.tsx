@@ -10,9 +10,9 @@ afterEach(() => {
 test('SubHeader match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/about']}>
+      <MemoryRouter initialEntries={['/about']}>
         <Routes>
-          <Route path='/PC_Club/about' element={<SubHeader title='hello' />} />
+          <Route path='/about' element={<SubHeader title='hello' />} />
         </Routes>
       </MemoryRouter>
     )
@@ -21,9 +21,9 @@ test('SubHeader match snapshot', () => {
 });
 test('SubHeader contains text', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/about']}>
+    <MemoryRouter initialEntries={['/about']}>
       <Routes>
-        <Route path='/PC_Club/about' element={<SubHeader title='hello' />} />
+        <Route path='/about' element={<SubHeader title='hello' />} />
       </Routes>
     </MemoryRouter>
   );

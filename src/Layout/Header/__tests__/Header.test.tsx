@@ -10,9 +10,9 @@ afterEach(() => {
 test('Header match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club']}>
+      <MemoryRouter initialEntries={['/']}>
         <Routes>
-          <Route path='/PC_Club' element={<Header />} />
+          <Route path='/' element={<Header />} />
         </Routes>
       </MemoryRouter>
     )
@@ -21,9 +21,9 @@ test('Header match snapshot', () => {
 });
 test('Header contains logo', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
-        <Route path='/PC_Club' element={<Header />} />
+        <Route path='/' element={<Header />} />
       </Routes>
     </MemoryRouter>
   );

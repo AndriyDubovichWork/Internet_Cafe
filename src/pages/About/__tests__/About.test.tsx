@@ -10,9 +10,9 @@ afterEach(() => {
 test('About match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/about']}>
+      <MemoryRouter initialEntries={['/about']}>
         <Routes>
-          <Route path='/PC_Club/about' element={<About />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       </MemoryRouter>
     )
@@ -21,9 +21,9 @@ test('About match snapshot', () => {
 });
 test('About contains main tag', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/about']}>
+    <MemoryRouter initialEntries={['/about']}>
       <Routes>
-        <Route path='/PC_Club/about' element={<About />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </MemoryRouter>
   );

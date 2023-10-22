@@ -19,7 +19,7 @@ import ForgotPassword from '../pages/ForgotPassword/ForgotPassword';
 
 const router = createBrowserRouter([
   {
-    path: 'PC_Club/',
+    path: '/',
     element: (
       <>
         <Header />
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/about',
+    path: '/about',
     element: (
       <>
         <Header />
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/computers',
+    path: '/computers',
     element: (
       <>
         <Header />
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/reviews',
+    path: '/reviews',
     element: (
       <>
         <Header />
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/team',
+    path: '/team',
     element: (
       <>
         <Header />
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/contact',
+    path: '/contact',
     element: (
       <>
         <Header />
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/login',
+    path: '/login',
     element: (
       <>
         <Header />
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/register',
+    path: '/register',
     element: (
       <>
         <Header />
@@ -91,7 +91,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: 'PC_Club/forgotPassword',
+    path: '/forgotPassword',
     element: (
       <>
         <Header />

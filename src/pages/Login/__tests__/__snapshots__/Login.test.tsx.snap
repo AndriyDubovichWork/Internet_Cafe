@@ -134,7 +134,7 @@ exports[`Login match snapshot 1`] = `
     </label>
     <a
       className="Link"
-      href="/PC_Club/forgotPassword"
+      href="/forgotPassword"
       onClick={[Function]}
     >
       Forgot Password?

@@ -10,10 +10,10 @@ afterEach(() => {
 test('PlanElem match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/']}>
+      <MemoryRouter initialEntries={['/']}>
         <Routes>
           <Route
-            path='/PC_Club/'
+            path='/'
             element={
               <PlanElem
                 title='Contact Us'
@@ -32,10 +32,10 @@ test('PlanElem match snapshot', () => {
 
 test('PlanElem contains text', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
         <Route
-          path='/PC_Club/'
+          path='/'
           element={
             <PlanElem title='Contact Us' subTitle='Our knowledgeable'>
               <div />

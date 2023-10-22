@@ -16,9 +16,9 @@ afterEach(() => {
 test('Register match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/register']}>
+      <MemoryRouter initialEntries={['/register']}>
         <Routes>
-          <Route path='/PC_Club/register' element={<Register />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
       </MemoryRouter>
     )
@@ -27,9 +27,9 @@ test('Register match snapshot', () => {
 });
 test('Register contains fields', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/register']}>
+    <MemoryRouter initialEntries={['/register']}>
       <Routes>
-        <Route path='/PC_Club/register' element={<Register />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </MemoryRouter>
   );
@@ -42,9 +42,9 @@ test('Register contains fields', () => {
 });
 test('Register input cnahges', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/register']}>
+    <MemoryRouter initialEntries={['/register']}>
       <Routes>
-        <Route path='/PC_Club/register' element={<Register />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </MemoryRouter>
   );

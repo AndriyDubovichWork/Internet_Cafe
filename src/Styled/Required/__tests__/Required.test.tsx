@@ -10,9 +10,9 @@ afterEach(() => {
 test('Required match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/']}>
+      <MemoryRouter initialEntries={['/']}>
         <Routes>
-          <Route path='/PC_Club/' element={<Required text='hi' />} />
+          <Route path='/' element={<Required text='hi' />} />
         </Routes>
       </MemoryRouter>
     )
@@ -21,9 +21,9 @@ test('Required match snapshot', () => {
 });
 test('Required contains text', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
-        <Route path='/PC_Club/' element={<Required text='hi' />} />
+        <Route path='/' element={<Required text='hi' />} />
       </Routes>
     </MemoryRouter>
   );

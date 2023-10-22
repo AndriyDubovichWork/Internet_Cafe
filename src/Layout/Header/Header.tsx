@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className={style.Header} ref={HeaderRef}>
-      <NavLink to='/PC_Club' className={style.Logo}>
+      <NavLink to='/' className={style.Logo}>
         <img
           loading='lazy'
           src={require('./assets/PCIcon.png')}
@@ -25,8 +25,8 @@ const Header = () => {
           className={style.Img}
         />
         <div className={style.Name}>
-          <h1>PC</h1>
-          <h2>CLUB</h2>
+          <h1>Internet</h1>
+          <h2>Cafe</h2>
         </div>
       </NavLink>
       <NavBar isNavBarOpen={isNavBarOpen} setIsNavBarOpen={setIsNavBarOpen} />
@@ -36,7 +36,7 @@ const Header = () => {
           <div className={style.LoginRegister}>
             {!isAuthorised ? (
               <>
-                <NavLink to='/PC_Club/login'>
+                <NavLink to='/login'>
                   <ButtonMUI
                     variant='text'
                     sx={{
@@ -50,7 +50,7 @@ const Header = () => {
                     Log In
                   </ButtonMUI>
                 </NavLink>
-                <NavLink to='/PC_Club/register'>
+                <NavLink to='/register'>
                   <Button>Register</Button>
                 </NavLink>
               </>

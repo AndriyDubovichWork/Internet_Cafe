@@ -10,9 +10,9 @@ afterEach(() => {
 test('Button match snapshot', () => {
   const tree = renderer
     .create(
-      <MemoryRouter initialEntries={['/PC_Club/']}>
+      <MemoryRouter initialEntries={['/']}>
         <Routes>
-          <Route path='/PC_Club/' element={<Button>hi</Button>} />
+          <Route path='/' element={<Button>hi</Button>} />
         </Routes>
       </MemoryRouter>
     )
@@ -22,10 +22,10 @@ test('Button match snapshot', () => {
 test('Button works', () => {
   let isCalled = false;
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
         <Route
-          path='/PC_Club/'
+          path='/'
           element={
             <Button
               onClick={() => {

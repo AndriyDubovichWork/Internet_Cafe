@@ -23,7 +23,7 @@ const Register = () => {
         initialValues={initialValues}
         onSubmit={() => {
           setIsAuthorised(true);
-          navigate('/PC_Club');
+          navigate('/');
         }}
         validationSchema={LoginSchema}
       >

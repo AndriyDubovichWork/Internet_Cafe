@@ -14,9 +14,9 @@ afterEach(() => {
 
 test('BookPC contains tags', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
-        <Route path='/PC_Club/' element={<BookPC />} />
+        <Route path='/' element={<BookPC />} />
       </Routes>
     </MemoryRouter>
   );
@@ -34,9 +34,9 @@ test('BookPC contains tags', () => {
 
 test('input changing', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
-        <Route path='/PC_Club/' element={<BookPC />} />
+        <Route path='/' element={<BookPC />} />
       </Routes>
     </MemoryRouter>
   );

@@ -9,9 +9,9 @@ afterEach(() => {
 
 test('Contact contains main tag', () => {
   const { getByRole } = render(
-    <MemoryRouter initialEntries={['/PC_Club/contact']}>
+    <MemoryRouter initialEntries={['/contact']}>
       <Routes>
-        <Route path='/PC_Club/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </MemoryRouter>
   );
@@ -20,9 +20,9 @@ test('Contact contains main tag', () => {
 });
 test('Contact contains form components', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club/contact']}>
+    <MemoryRouter initialEntries={['/contact']}>
       <Routes>
-        <Route path='/PC_Club/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </MemoryRouter>
   );

@@ -23,7 +23,7 @@ const Login = () => {
         initialValues={initialValues}
         onSubmit={() => {
           setIsAuthorised(true);
-          navigate('/PC_Club');
+          navigate('/');
         }}
         validationSchema={LoginSchema}
       >
@@ -41,7 +41,7 @@ const Login = () => {
             className={style.password}
           />
           <FormControlLabel control={<Checkbox />} label='remember me' />
-          <NavLink to='/PC_Club/forgotPassword' className={style.Link}>
+          <NavLink to='/forgotPassword' className={style.Link}>
             Forgot Password?
           </NavLink>
           <Button type='submit'>Log In</Button>

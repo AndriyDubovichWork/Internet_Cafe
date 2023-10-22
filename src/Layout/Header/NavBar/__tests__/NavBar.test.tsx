@@ -9,10 +9,10 @@ afterEach(() => {
 
 test('NavBar contains links', () => {
   render(
-    <MemoryRouter initialEntries={['/PC_Club']}>
+    <MemoryRouter initialEntries={['/']}>
       <Routes>
         <Route
-          path='/PC_Club'
+          path='/'
           element={<NavBar isNavBarOpen={true} setIsNavBarOpen={() => {}} />}
         />
       </Routes>

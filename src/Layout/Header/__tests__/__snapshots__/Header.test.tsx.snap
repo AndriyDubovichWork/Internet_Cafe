@@ -7,7 +7,7 @@ exports[`Header match snapshot 1`] = `
   <a
     aria-current="page"
     className="Logo active"
-    href="/PC_Club"
+    href="/"
     onClick={[Function]}
   >
     <img

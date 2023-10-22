@@ -18,7 +18,7 @@ const ForgotPassword = () => {
       <Formik
         initialValues={initialValues}
         onSubmit={() => {
-          navigate('/PC_Club');
+          navigate('/');
         }}
         validationSchema={LoginSchema}
       >
